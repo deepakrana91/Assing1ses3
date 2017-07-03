@@ -1,3 +1,4 @@
+import { Greeter } from './Greeter';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  ngOnInit() {
+
+    let note = new Greeter("Work is workship")
+    console.log(note.greet());
+  }
 }
